@@ -10,20 +10,19 @@ class LoginPage extends StatelessWidget {
       body:SafeArea(
         child: Center(
           child: Column(
-            children: [
-            const SizedBox(height: 50),
+            children: const [
+            SizedBox(height: 50),
 
             //Logo
-            const Icon(
+            Icon(
               Icons.lock,
               size: 100,
               
-              
-              
-              
               ),
+
+              SizedBox(height: 50),
             //Welcome back, 
-              
+              Text('Halaldı Asıf')
             //Password textfield
               
             //Forgot password
