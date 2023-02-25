@@ -9,16 +9,17 @@ class LoginPage extends StatelessWidget {
       backgroundColor: Colors.grey[300],
       body: SafeArea(
         child: Center(
-          child: Column(children: const [
-            SizedBox(height: 50),
+          child: Column(
+            children:  [
+           const SizedBox(height: 50),
 
             //Logo
-            Icon(
+           const Icon(
               Icons.lock,
               size: 100,
             ),
 
-           SizedBox(height: 50),
+           const SizedBox(height: 50),
 
             //Welcome back,
             Text(
