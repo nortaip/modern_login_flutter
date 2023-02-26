@@ -111,16 +111,21 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
               ),
+              
+             const SizedBox(height: 50),
 
               //Google + apple sign in buttons
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   //google button
-                  SquareTile(imagePath: 'lib/images/google.png'),
-
+                 SquareTile(imagePath: '../Users/anarabbas/Develop/modern_login_flutter/modern_login_ui_flutter/lib/images'),
+                 
+                  SizedBox(width: 25),
 
                   //apple button
-                   SquareTile(imagePath: 'lib/images/apple.png'),
+
+                 //SquareTile(imagePath: 'lib/images/google-logo.png'),
                 ],
                   )
                 ],
