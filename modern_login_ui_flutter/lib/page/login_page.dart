@@ -18,10 +18,11 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[300],
-        body: SafeArea(
-          child: Center(
-            child: Column(children: [
+      backgroundColor: Colors.grey[300],
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            children: [
               const SizedBox(height: 50),
 
               //Logo
@@ -91,8 +92,8 @@ class LoginPage extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Divider(
-                     thickness: 1,
-                     color: Colors.grey[400],
+                        thickness: 1,
+                        color: Colors.grey[400],
                       ),
                     ),
                     Padding(
@@ -100,39 +101,38 @@ class LoginPage extends StatelessWidget {
                       child: Text(
                         'Aşağıdakılar ile devam edin',
                         style: TextStyle(color: Colors.grey[700]),
-                        ),
+                      ),
                     ),
-                     Expanded(
+                    Expanded(
                       child: Divider(
-                     thickness: 1,
-                     color: Colors.grey[400],
+                        thickness: 1,
+                        color: Colors.grey[400],
                       ),
                     ),
                   ],
                 ),
               ),
-              
-             const SizedBox(height: 50),
+
+              const SizedBox(height: 50),
 
               //Google + apple sign in buttons
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   //google button
-                 SquareTile(imagePath: '../Users/anarabbas/Develop/modern_login_flutter/modern_login_ui_flutter/lib/images'),
-                 
+                  SquareTile(imagePath: 'assets/images/apple-logo.png'),
+
                   SizedBox(width: 25),
 
                   //apple button
 
-                 //SquareTile(imagePath: 'lib/images/google-logo.png'),
+                  SquareTile(imagePath: 'assets/images/google-logo.png'),
                 ],
-                  )
-                ],
-              ),
-            ),
+              )
+            ],
           ),
-        );
-      
-   }
+        ),
+      ),
+    );
+  }
 }
