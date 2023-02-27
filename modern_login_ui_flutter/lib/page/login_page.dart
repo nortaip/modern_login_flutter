@@ -19,30 +19,37 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
-      body: SafeArea(
+      
+      body: Container(
+        decoration: BoxDecoration(
+        image: DecorationImage(
+            image: AssetImage("assets/images/Mask_groupa.png"),
+            //colorFilter: ColorFilter.mode(Colors.white.withOpacity(0.4), BlendMode.modulate),
+            fit: BoxFit.cover),),
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 50),
 
               //Logo
-              const Icon(
-                Icons.lock,
-                size: 100,
-              ),
+             // const Icon(
+               // Icons.lock,
+                //size: 100,
+             // ),
 
-              const SizedBox(height: 50),
+              const SizedBox(height: 100),
 
               //Welcome back,
               Text(
                 'Tekrar hoşgeldin, özlendin reis!',
                 style: TextStyle(
-                  color: Colors.grey[700],
-                  fontSize: 18,
+                  color: Colors.black,fontWeight:FontWeight.bold,
+                  fontSize: 22,
                 ),
               ),
 
-              const SizedBox(height: 25),
+              const SizedBox(height: 35),
 
               //Username textfield
 
@@ -120,13 +127,29 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   //google button
-                  SquareTile(imagePath: 'assets/images/apple-logo.png'),
+                  SquareTile(imagePath: 'assets/images/google-logo.png'),
 
-                  SizedBox(width: 25),
+                  SizedBox(width: 30 ),
 
                   //apple button
 
-                  SquareTile(imagePath: 'assets/images/google-logo.png'),
+                  SquareTile(imagePath: 'assets/images/apple-logo.png'),
+                ],
+              ),
+              const SizedBox(height: 25),
+              //Not a member? register now
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Üye Değilmisin?',
+                  style: TextStyle(color: Colors.grey[700]),
+                  ),
+                  const SizedBox(width: 10),
+                  const Text(
+                    'Şimdi Üye Ol',
+                  style: TextStyle(
+                  color: Colors.blue, fontWeight:FontWeight.bold),
+                  ),
                 ],
               )
             ],
